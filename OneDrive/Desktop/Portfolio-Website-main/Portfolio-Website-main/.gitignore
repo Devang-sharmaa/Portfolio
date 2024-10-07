@@ -1,5 +1,4 @@
 # Logs
-logs
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,19 +6,36 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+.vscode/
+.idea/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Production
+dist/
+build/
+out/
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# System files
 .DS_Store
+Thumbs.db
+
+# Editor directories
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-.DS_Store
+
+# Ignore specific user configurations and unnecessary OneDrive data
+OneDrive/
+AppData/
+Desktop.ini
+NTUSER.DAT*
